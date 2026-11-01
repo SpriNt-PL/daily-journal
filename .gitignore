@@ -1,2 +1,9 @@
 # Virtual environment
 .venv/
+
+# Configuration
+*.ini
+
+# Storage
+storage/
+*.db
