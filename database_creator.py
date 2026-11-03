@@ -17,7 +17,7 @@ class DatabaseCreator:
                 query = """--sql
                 CREATE TABLE IF NOT EXISTS journal_entry (
                     entry_id INTEGER PRIMARY KEY AUTOINCREMENT, 
-                    entry_date DATETIME NOT NULL,
+                    entry_date DATETIME UNIQUE NOT NULL,
                     content TEXT NOT NULL,
                     created_at DATETIME DEFAULT (datetime('now')),
                     updated_at DATETIME DEFAULT (datetime('now'))
