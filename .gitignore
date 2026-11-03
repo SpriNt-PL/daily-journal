@@ -1,5 +1,6 @@
-# Virtual environment
+# Virtual environment and project files
 .venv/
+__pycache__/
 
 # Configuration
 *.ini
