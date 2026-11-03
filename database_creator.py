@@ -1,6 +1,7 @@
 import sqlite3
 from configparser import ConfigParser
 
+
 class DatabaseCreator:
     def __init__(self):   
         self.cp = ConfigParser()
@@ -10,7 +11,7 @@ class DatabaseCreator:
     def create_database(self):
         try:
             with sqlite3.connect(self.db_path) as conn:
-                print(f"Opened SQLite database successfully.")
+                print("Opened SQLite database successfully.")
 
                 cursor = conn.cursor()
 

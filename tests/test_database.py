@@ -1,7 +1,9 @@
 import sqlite3
+
 import pytest
-from pathlib import Path
+
 from database_creator import DatabaseCreator
+
 
 @pytest.fixture
 def temp_db(tmp_path, monkeypatch):
